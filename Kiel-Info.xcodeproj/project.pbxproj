@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB52EC6C1B821D4600EA18F5 /* cau.json in Resources */ = {isa = PBXBuildFile; fileRef = CB52EC6B1B821D4600EA18F5 /* cau.json */; };
+		CB52EC6E1B821E7700EA18F5 /* MarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52EC6D1B821E7700EA18F5 /* MarketData.swift */; };
+		CB52EC701B821F4F00EA18F5 /* JSONMarkets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52EC6F1B821F4F00EA18F5 /* JSONMarkets.swift */; };
+		CB52EC741B82202200EA18F5 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52EC731B82202200EA18F5 /* ItemData.swift */; };
+		CB52EC761B8221F900EA18F5 /* JSONItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52EC751B8221F900EA18F5 /* JSONItems.swift */; };
+		CB52EC7A1B82275200EA18F5 /* JSONCAU.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52EC791B82275200EA18F5 /* JSONCAU.swift */; };
+		CB52EC7C1B82279D00EA18F5 /* CAUData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52EC7B1B82279D00EA18F5 /* CAUData.swift */; };
+		CB52EC7E1B822D2A00EA18F5 /* JSONFinance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52EC7D1B822D2A00EA18F5 /* JSONFinance.swift */; };
+		CB52EC801B822D3B00EA18F5 /* FinanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52EC7F1B822D3B00EA18F5 /* FinanceData.swift */; };
+		CB52EC821B82324D00EA18F5 /* wochenmarkt.json in Resources */ = {isa = PBXBuildFile; fileRef = CB52EC811B82324D00EA18F5 /* wochenmarkt.json */; };
+		CB52EC841B82326500EA18F5 /* finanzamt.json in Resources */ = {isa = PBXBuildFile; fileRef = CB52EC831B82326500EA18F5 /* finanzamt.json */; };
+		CB56B54F1B66384D00DB7E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56B54E1B66384D00DB7E28 /* AppDelegate.swift */; };
+		CB56B5541B66384D00DB7E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB56B5521B66384D00DB7E28 /* Main.storyboard */; };
+		CB56B5561B66384D00DB7E28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB56B5551B66384D00DB7E28 /* Images.xcassets */; };
+		CB56B5591B66384D00DB7E28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB56B5571B66384D00DB7E28 /* LaunchScreen.xib */; };
+		CB56B5651B66384D00DB7E28 /* Kiel_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56B5641B66384D00DB7E28 /* Kiel_InfoTests.swift */; };
+		CB58D0CC1B6F5EDB00B21A6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */; };
+		CB7824FD1B6D1AC80016C6AC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */; };
+		CBAC16961B77987A005CB04F /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC16951B77987A005CB04F /* Annotations.swift */; };
+		CBC0C03A1B6A367300AC0D2A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0C0391B6A367300AC0D2A /* StartViewController.swift */; };
+		CBC0C03E1B6A3C2900AC0D2A /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = CBC0C03D1B6A3C2900AC0D2A /* items.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB56B55F1B66384D00DB7E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB56B5411B66384D00DB7E28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB56B5481B66384D00DB7E28;
+			remoteInfo = "Kiel-Info";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB52EC6B1B821D4600EA18F5 /* cau.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cau.json; sourceTree = "<group>"; };
+		CB52EC6D1B821E7700EA18F5 /* MarketData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketData.swift; sourceTree = "<group>"; };
+		CB52EC6F1B821F4F00EA18F5 /* JSONMarkets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMarkets.swift; sourceTree = "<group>"; };
+		CB52EC731B82202200EA18F5 /* ItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		CB52EC751B8221F900EA18F5 /* JSONItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONItems.swift; sourceTree = "<group>"; };
+		CB52EC791B82275200EA18F5 /* JSONCAU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCAU.swift; sourceTree = "<group>"; };
+		CB52EC7B1B82279D00EA18F5 /* CAUData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAUData.swift; sourceTree = "<group>"; };
+		CB52EC7D1B822D2A00EA18F5 /* JSONFinance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFinance.swift; sourceTree = "<group>"; };
+		CB52EC7F1B822D3B00EA18F5 /* FinanceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceData.swift; sourceTree = "<group>"; };
+		CB52EC811B82324D00EA18F5 /* wochenmarkt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wochenmarkt.json; sourceTree = "<group>"; };
+		CB52EC831B82326500EA18F5 /* finanzamt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = finanzamt.json; sourceTree = "<group>"; };
+		CB56B5491B66384D00DB7E28 /* Kiel-Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kiel-Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB56B54D1B66384D00DB7E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB56B54E1B66384D00DB7E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB56B5531B66384D00DB7E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB56B5551B66384D00DB7E28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB56B5581B66384D00DB7E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CB56B55E1B66384D00DB7E28 /* Kiel-InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kiel-InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB56B5631B66384D00DB7E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB56B5641B66384D00DB7E28 /* Kiel_InfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kiel_InfoTests.swift; sourceTree = "<group>"; };
+		CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CBAC16951B77987A005CB04F /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
+		CBC0C0391B6A367300AC0D2A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		CBC0C03D1B6A3C2900AC0D2A /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB56B5461B66384D00DB7E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB58D0CC1B6F5EDB00B21A6F /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB56B55B1B66384D00DB7E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB52EC711B821FC200EA18F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBC0C0391B6A367300AC0D2A /* StartViewController.swift */,
+				CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */,
+				CBAC16951B77987A005CB04F /* Annotations.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CB52EC721B821FE700EA18F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB52EC751B8221F900EA18F5 /* JSONItems.swift */,
+				CB52EC731B82202200EA18F5 /* ItemData.swift */,
+				CB52EC6F1B821F4F00EA18F5 /* JSONMarkets.swift */,
+				CB52EC6D1B821E7700EA18F5 /* MarketData.swift */,
+				CB52EC791B82275200EA18F5 /* JSONCAU.swift */,
+				CB52EC7B1B82279D00EA18F5 /* CAUData.swift */,
+				CB52EC7D1B822D2A00EA18F5 /* JSONFinance.swift */,
+				CB52EC7F1B822D3B00EA18F5 /* FinanceData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CB56B5401B66384D00DB7E28 = {
+			isa = PBXGroup;
+			children = (
+				CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */,
+				CB56B54B1B66384D00DB7E28 /* Kiel-Info */,
+				CB56B5611B66384D00DB7E28 /* Kiel-InfoTests */,
+				CB56B54A1B66384D00DB7E28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB56B54A1B66384D00DB7E28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB56B5491B66384D00DB7E28 /* Kiel-Info.app */,
+				CB56B55E1B66384D00DB7E28 /* Kiel-InfoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB56B54B1B66384D00DB7E28 /* Kiel-Info */ = {
+			isa = PBXGroup;
+			children = (
+				CB56B5571B66384D00DB7E28 /* LaunchScreen.xib */,
+				CB56B5521B66384D00DB7E28 /* Main.storyboard */,
+				CB52EC721B821FE700EA18F5 /* Model */,
+				CB52EC711B821FC200EA18F5 /* Controller */,
+				CB56B54C1B66384D00DB7E28 /* Supporting Files */,
+			);
+			path = "Kiel-Info";
+			sourceTree = "<group>";
+		};
+		CB56B54C1B66384D00DB7E28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB56B5551B66384D00DB7E28 /* Images.xcassets */,
+				CB56B54E1B66384D00DB7E28 /* AppDelegate.swift */,
+				CBC0C03D1B6A3C2900AC0D2A /* items.json */,
+				CB52EC811B82324D00EA18F5 /* wochenmarkt.json */,
+				CB52EC6B1B821D4600EA18F5 /* cau.json */,
+				CB52EC831B82326500EA18F5 /* finanzamt.json */,
+				CB56B54D1B66384D00DB7E28 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB56B5611B66384D00DB7E28 /* Kiel-InfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB56B5641B66384D00DB7E28 /* Kiel_InfoTests.swift */,
+				CB56B5621B66384D00DB7E28 /* Supporting Files */,
+			);
+			path = "Kiel-InfoTests";
+			sourceTree = "<group>";
+		};
+		CB56B5621B66384D00DB7E28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB56B5631B66384D00DB7E28 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB56B5481B66384D00DB7E28 /* Kiel-Info */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB56B5681B66384D00DB7E28 /* Build configuration list for PBXNativeTarget "Kiel-Info" */;
+			buildPhases = (
+				CB56B5451B66384D00DB7E28 /* Sources */,
+				CB56B5461B66384D00DB7E28 /* Frameworks */,
+				CB56B5471B66384D00DB7E28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kiel-Info";
+			productName = "Kiel-Info";
+			productReference = CB56B5491B66384D00DB7E28 /* Kiel-Info.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB56B55D1B66384D00DB7E28 /* Kiel-InfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB56B56B1B66384D00DB7E28 /* Build configuration list for PBXNativeTarget "Kiel-InfoTests" */;
+			buildPhases = (
+				CB56B55A1B66384D00DB7E28 /* Sources */,
+				CB56B55B1B66384D00DB7E28 /* Frameworks */,
+				CB56B55C1B66384D00DB7E28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB56B5601B66384D00DB7E28 /* PBXTargetDependency */,
+			);
+			name = "Kiel-InfoTests";
+			productName = "Kiel-InfoTests";
+			productReference = CB56B55E1B66384D00DB7E28 /* Kiel-InfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB56B5411B66384D00DB7E28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Bodo Schönfeld";
+				TargetAttributes = {
+					CB56B5481B66384D00DB7E28 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CB56B55D1B66384D00DB7E28 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CB56B5481B66384D00DB7E28;
+					};
+				};
+			};
+			buildConfigurationList = CB56B5441B66384D00DB7E28 /* Build configuration list for PBXProject "Kiel-Info" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB56B5401B66384D00DB7E28;
+			productRefGroup = CB56B54A1B66384D00DB7E28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB56B5481B66384D00DB7E28 /* Kiel-Info */,
+				CB56B55D1B66384D00DB7E28 /* Kiel-InfoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB56B5471B66384D00DB7E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB56B5541B66384D00DB7E28 /* Main.storyboard in Resources */,
+				CB56B5591B66384D00DB7E28 /* LaunchScreen.xib in Resources */,
+				CB52EC821B82324D00EA18F5 /* wochenmarkt.json in Resources */,
+				CBC0C03E1B6A3C2900AC0D2A /* items.json in Resources */,
+				CB56B5561B66384D00DB7E28 /* Images.xcassets in Resources */,
+				CB52EC841B82326500EA18F5 /* finanzamt.json in Resources */,
+				CB52EC6C1B821D4600EA18F5 /* cau.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB56B55C1B66384D00DB7E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB56B5451B66384D00DB7E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7824FD1B6D1AC80016C6AC /* MapViewController.swift in Sources */,
+				CB52EC761B8221F900EA18F5 /* JSONItems.swift in Sources */,
+				CB52EC7C1B82279D00EA18F5 /* CAUData.swift in Sources */,
+				CB52EC7E1B822D2A00EA18F5 /* JSONFinance.swift in Sources */,
+				CB52EC7A1B82275200EA18F5 /* JSONCAU.swift in Sources */,
+				CB56B54F1B66384D00DB7E28 /* AppDelegate.swift in Sources */,
+				CBC0C03A1B6A367300AC0D2A /* StartViewController.swift in Sources */,
+				CB52EC741B82202200EA18F5 /* ItemData.swift in Sources */,
+				CB52EC701B821F4F00EA18F5 /* JSONMarkets.swift in Sources */,
+				CBAC16961B77987A005CB04F /* Annotations.swift in Sources */,
+				CB52EC801B822D3B00EA18F5 /* FinanceData.swift in Sources */,
+				CB52EC6E1B821E7700EA18F5 /* MarketData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB56B55A1B66384D00DB7E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB56B5651B66384D00DB7E28 /* Kiel_InfoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB56B5601B66384D00DB7E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB56B5481B66384D00DB7E28 /* Kiel-Info */;
+			targetProxy = CB56B55F1B66384D00DB7E28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB56B5521B66384D00DB7E28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB56B5531B66384D00DB7E28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB56B5571B66384D00DB7E28 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB56B5581B66384D00DB7E28 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB56B5661B66384D00DB7E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB56B5671B66384D00DB7E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB56B5691B66384D00DB7E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Kiel-Info/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB56B56A1B66384D00DB7E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Kiel-Info/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB56B56C1B66384D00DB7E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Kiel-InfoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
+			};
+			name = Debug;
+		};
+		CB56B56D1B66384D00DB7E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Kiel-InfoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB56B5441B66384D00DB7E28 /* Build configuration list for PBXProject "Kiel-Info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB56B5661B66384D00DB7E28 /* Debug */,
+				CB56B5671B66384D00DB7E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB56B5681B66384D00DB7E28 /* Build configuration list for PBXNativeTarget "Kiel-Info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB56B5691B66384D00DB7E28 /* Debug */,
+				CB56B56A1B66384D00DB7E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB56B56B1B66384D00DB7E28 /* Build configuration list for PBXNativeTarget "Kiel-InfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB56B56C1B66384D00DB7E28 /* Debug */,
+				CB56B56D1B66384D00DB7E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB56B5411B66384D00DB7E28 /* Project object */;
+}

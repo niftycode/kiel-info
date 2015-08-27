@@ -1,0 +1,160 @@
+{"locations":
+    {
+        "Blücherplatz": {
+            "days": [
+                     "8-13",
+                     "null",
+                     "null",
+                     "8-13",
+                     "null",
+                     "null",
+                     "null"
+                     ],
+            "location": "Blücherplatz",
+            "coordinates": [54.34147, 10.13623]
+        },
+        "Exerzierplatz": {
+            "days": [
+                     "null",
+                     "null",
+                     "8-13",
+                     "null",
+                     "null",
+                     "8-13",
+                     "null"
+                     ],
+            "location": "Exerzierplatz",
+            "coordinates": [54.32306, 10.12541]
+        },
+        "Vinetaplatz": {
+            "days": [
+                     "null",
+                     "8-13",
+                     "null",
+                     "null",
+                     "null",
+                     "8-13",
+                     "null"
+                     ],
+            "location": "Vinetaplatz",
+            "coordinates": [54.31152, 10.14659]
+        },
+        "Andreas-Hofer-Platz": {
+            "days": [
+                     "null",
+                     "8-13",
+                     "null",
+                     "null",
+                     "null",
+                     "8-13",
+                     "null"
+                     ],
+            "location": "Andreas-Hofer-Platz",
+            "coordinates": [54.29817, 10.18360]
+        },
+        "Ende Bergenring": {
+            "days": [
+                     "null",
+                     "null",
+                     "null",
+                     "null",
+                     "8-13",
+                     "null",
+                     "null"
+                     ],
+            "location": "Ende Bergenring",
+            "coordinates": [54.32394, 10.05506]
+        },
+        "Holtenauer Straße / Elendsredder": {
+            "days": [
+                     "null",
+                     "8-13",
+                     "null",
+                     "8-13",
+                     "8-13",
+                     "null",
+                     "null"
+                     ],
+            "location": "Holtenauer Straße / Elendsredder",
+            "coordinates": [54.35502, 10.13068]
+        },
+        "Leuchtturmplatz": {
+            "days": [
+                     "null",
+                     "null",
+                     "8-13",
+                     "null",
+                     "null",
+                     "8-13",
+                     "null"
+                     ],
+            "location": "Leuchtturmplatz",
+            "coordinates": [54.39579, 10.17555]
+        },
+        "Helmut-Hänsler-Platz": {
+            "days": [
+                     "null",
+                     "null",
+                     "null",
+                     "null",
+                     "null",
+                     "8-13",
+                     "null"
+                     ],
+            "location": "Helmut-Hänsler-Platz",
+            "coordinates": [54.33602, 10.19082]
+        },
+        "Am Eckernplatz": {
+            "days": [
+                     "null",
+                     "null",
+                     "null",
+                     "null",
+                     "14-17",
+                     "null",
+                     "null"
+                     ],
+            "location": "Am Eckernplatz",
+            "coordinates": [54.37247, 10.13816]
+        },
+        "Langenfelde": {
+            "days": [
+                     "null",
+                     "null",
+                     "null",
+                     "null",
+                     "14-18",
+                     "null",
+                     "null"
+                     ],
+            "location": "Langenfelde",
+            "coordinates": [54.41931, 10.17139]
+        },
+        "Rungholtplatz": {
+            "days": [
+                     "null",
+                     "null",
+                     "null",
+                     "14-18",
+                     "null",
+                     "null",
+                     "null"
+                     ],
+            "location": "Rungholtplatz",
+            "coordinates": [54.36133, 10.07690]
+        },
+        "Asmus-Bremer-Platz": {
+            "days": [
+                     "null",
+                     "null",
+                     "null",
+                     "null",
+                     "12-18",
+                     "null",
+                     "null"
+                     ],
+            "location": "Asmus-Bremer-Platz",
+            "coordinates": [54.32113, 10.13497]
+        }
+    }
+}

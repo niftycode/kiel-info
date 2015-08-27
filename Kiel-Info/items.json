@@ -1,0 +1,15 @@
+{"location": {
+        "Wochenmarkt": {
+            "name": "Wochenmärkte",
+            "description": "Eine Übersicht über Wochenmärkte in Kiel."
+        },
+        "Uni-Kiel": {
+            "name": "Christian-Albrechts-Universität zu Kiel",
+            "description": "Campus-Übersicht"
+        },
+        "Finanzamt": {
+            "name": "Finanzämter",
+            "description": "Finanzämter und ihre Öffnungszeiten"
+        }
+    }
+}

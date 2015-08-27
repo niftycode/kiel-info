@@ -1,0 +1,32 @@
+{"locations":
+    {
+        "Finanzamt Kiel-Nord": {
+            "days": [
+                    "8-12",
+                    "8-12, 14:30-17:30",
+                    "null",
+                    "8-12",
+                    "8-12",
+                    "null",
+                    "null"
+                    ],
+            "location": "Finanzamt Kiel-Nord",
+            "address": "Holtenauer Straße 183, 24118 Kiel",
+            "coordinates": [54.34493, 10.13311]
+        },
+        "Finanzamt Kiel-Süd": {
+            "days": [
+                     "8-12",
+                     "8-12, 14:30-17:30",
+                     "null",
+                     "8-12",
+                     "8-12",
+                     "null",
+                     "null"
+                     ],
+            "location": "Finanzamt Kiel-Süd",
+            "address": "Feldstraße 23, 24105 Kiel",
+            "coordinates": [54.33349, 10.13952]
+        }
+    }
+}

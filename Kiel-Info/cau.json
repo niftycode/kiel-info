@@ -1,0 +1,44 @@
+{"locations":
+    {
+        "Skateboardanlage": {
+            "location": "Skateboardanlage",
+            "info": "",
+            "coordinates": [54.34455, 10.11300]
+        },
+        "Mensa I": {
+            "location": "Mensa I",
+            "info": "Sechseckbau, AStA, Studentenwerk SH",
+            "coordinates": [54.33753, 10.12264]
+        },
+        "Mensa II": {
+            "location": "Mensa II",
+            "info": "Studentenwerk SH",
+            "coordinates": [54.34687, 10.11257]
+        },
+        "Auditorium Maximum": {
+            "location": "Auditorium Maximum",
+            "info": "",
+            "coordinates": [54.33817, 10.12395]
+        },
+        "Zentrale Verwaltung": {
+            "location": "Zentrale Verwaltung",
+            "info": "Dekanat der Mathematisch-Naturwissenschaftlichen Fakultät",
+            "coordinates": [54.33881, 10.12281]
+        },
+        "Hörsäle Alte Mensa": {
+            "location": "Hörsäle Alte Mensa",
+            "info": "",
+            "coordinates": [54.33902, 10.12464]
+        },
+        "Botanischer Garten": {
+            "location": "Botanischer Garten",
+            "info": "",
+            "coordinates": [54.34796, 10.11432]
+        },
+        "Biologiezentrum": {
+            "location": "Biologiezentrum",
+            "info": "",
+            "coordinates": [54.34683, 10.11500]
+        }
+    }
+}
