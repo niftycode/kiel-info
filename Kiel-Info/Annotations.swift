@@ -37,7 +37,6 @@ extension MapViewController: MKMapViewDelegate {
             return annotationView
         }
         return nil
-        
     }
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
@@ -55,7 +54,5 @@ extension MapViewController: MKMapViewDelegate {
                 presentViewController(alert, animated: true, completion: nil)
             }
         }
-        
-        
     }
 }
