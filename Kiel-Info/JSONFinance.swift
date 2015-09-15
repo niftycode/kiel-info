@@ -16,9 +16,9 @@ class JSONFinance: NSObject {
         
         let locations = d["locations"] as! Dictionary<String, AnyObject>
         
-        for (location, value) in locations {
+        for (_, value) in locations {
             
-            var financeData = FinanceData.fromJSONObject(value as! Dictionary<String, AnyObject>)
+            let financeData = FinanceData.fromJSONObject(value as! Dictionary<String, AnyObject>)
             financeArray.append(financeData!)
             
         }

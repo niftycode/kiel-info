@@ -39,7 +39,7 @@ class MapViewController: UIViewController {
         case "Finanzämter":
             location = "finanzamt"
         default:
-            println("another place")
+            print("another place")
         }
         
         self.fetchDataFromJSONFile()
@@ -53,19 +53,23 @@ class MapViewController: UIViewController {
     // MARK: - JSON stuff
     
     func fetchDataFromJSONFile() {
-        // println("location = \(location)")
+        
         let filePath = NSBundle.mainBundle().pathForResource(location, ofType: "json")
+        
         var err: NSError?
-        if let data = NSData(contentsOfFile: filePath!, options: NSDataReadingOptions.DataReadingUncached, error: &err) {
+        do {
+            let data = try NSData(contentsOfFile: filePath!, options: NSDataReadingOptions.DataReadingUncached)
             self.getData(data)
+        } catch let error as NSError {
+            err = error
         }
+        
     }
     
     func getData(data: NSData) {
         
-        var error: NSError?
-        let jsonResult = NSJSONSerialization.JSONObjectWithData(data,
-            options: NSJSONReadingOptions.MutableContainers, error: &error)! as! Dictionary<String, AnyObject>
+        let jsonResult = (try! NSJSONSerialization.JSONObjectWithData(data,
+            options: NSJSONReadingOptions.MutableContainers)) as! Dictionary<String, AnyObject>
         
         switch selectedMap {
         case "Wochenmärkte":
@@ -75,7 +79,7 @@ class MapViewController: UIViewController {
         case "Finanzämter":
             finance = jsonFinance.readFromJSONMapDictionary(jsonResult)
         default:
-            println("another place")
+            print("another place")
         }
     }
     
@@ -106,7 +110,7 @@ class MapViewController: UIViewController {
             let region = regionForAnnotations(finance)
             mapView.setRegion(region, animated: true)
         default:
-            println("another place")
+            print("another place")
         }
     }
     

@@ -134,8 +134,7 @@
 		CB56B54B1B66384D00DB7E28 /* Kiel-Info */ = {
 			isa = PBXGroup;
 			children = (
-				CB56B5571B66384D00DB7E28 /* LaunchScreen.xib */,
-				CB56B5521B66384D00DB7E28 /* Main.storyboard */,
+				CBB43CA61BA85CBC00EEE490 /* View */,
 				CB52EC721B821FE700EA18F5 /* Model */,
 				CB52EC711B821FC200EA18F5 /* Controller */,
 				CB56B54C1B66384D00DB7E28 /* Supporting Files */,
@@ -172,6 +171,15 @@
 				CB56B5631B66384D00DB7E28 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBB43CA61BA85CBC00EEE490 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB56B5571B66384D00DB7E28 /* LaunchScreen.xib */,
+				CB56B5521B66384D00DB7E28 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +226,9 @@
 		CB56B5411B66384D00DB7E28 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Bodo Schönfeld";
 				TargetAttributes = {
 					CB56B5481B66384D00DB7E28 = {
@@ -352,6 +362,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -418,7 +429,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Kiel-Info/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.niftycode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -429,7 +442,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Kiel-Info/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.niftycode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -448,6 +463,7 @@
 				);
 				INFOPLIST_FILE = "Kiel-InfoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nicefield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
 			};
@@ -463,6 +479,7 @@
 				);
 				INFOPLIST_FILE = "Kiel-InfoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nicefield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
 			};

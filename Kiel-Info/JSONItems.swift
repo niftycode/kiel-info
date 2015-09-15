@@ -17,9 +17,9 @@ class JSONItems: NSObject {
         
         let locations = d["location"] as! Dictionary<String, AnyObject>
         
-        for (name, value) in locations {
+        for (_, value) in locations {
             
-            var i = ItemData()
+            let i = ItemData()
             i.showJSONItems(value as! Dictionary<String, NSObject>)
             jsonArray.append(i)
         }

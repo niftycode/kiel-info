@@ -29,34 +29,19 @@ class StartViewController: UITableViewController {
         let filePath = NSBundle.mainBundle().pathForResource("items",ofType:"json")
         
         var readError:NSError?
-        if let data = NSData(contentsOfFile:filePath!,
-            options: NSDataReadingOptions.DataReadingUncached,
-            error:&readError) {
+        do {
+            let data = try NSData(contentsOfFile:filePath!,
+                options: NSDataReadingOptions.DataReadingUncached)
                 self.getData(data)
+        } catch let error as NSError {
+            readError = error
         }
-        
-        /*
-        // background threat
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-            
-            let filePath = NSBundle.mainBundle().pathForResource("items",ofType:"json")
-            
-            var readError:NSError?
-            if let data = NSData(contentsOfFile:filePath!,
-                options: NSDataReadingOptions.DataReadingUncached,
-                error:&readError) {
-                    self.getData(data)
-            }
-            
-        })
-        */
     }
 
     func getData(data: NSData) {
-
-        var jsonError: NSError?
-        var jsonResult: AnyObject = NSJSONSerialization.JSONObjectWithData(data,
-            options: NSJSONReadingOptions.MutableContainers, error: &jsonError)! as! Dictionary<String, AnyObject>
+        
+        let jsonResult: AnyObject = (try! NSJSONSerialization.JSONObjectWithData(data,
+            options: NSJSONReadingOptions.MutableContainers)) as! Dictionary<String, AnyObject>
         
         jsonItem.readFromJSONDictionary(jsonResult as! Dictionary<String, AnyObject>)
         
@@ -69,7 +54,7 @@ class StartViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("LocationItem", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("LocationItem", forIndexPath: indexPath) 
         
         let item = jsonItem.jsonArray[indexPath.row]
         
@@ -100,7 +85,7 @@ class StartViewController: UITableViewController {
         
         if segue.identifier == "ShowMap" {
             
-            let selectedIndexPath = tableView.indexPathForSelectedRow()
+            let selectedIndexPath = tableView.indexPathForSelectedRow
             let cell = tableView.cellForRowAtIndexPath(selectedIndexPath!)
             let name = getNameLabel(cell!)
             

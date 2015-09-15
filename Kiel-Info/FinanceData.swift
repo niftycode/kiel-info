@@ -11,8 +11,8 @@ import MapKit
 
 class FinanceData: NSObject, MKAnnotation {
     
-    let title: String
-    let subtitle: String
+    let title: String?
+    let subtitle: String?
     let coordinate: CLLocationCoordinate2D
     let info: String
     

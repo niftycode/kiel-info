@@ -11,7 +11,7 @@ import MapKit
 
 class MarketData: NSObject, MKAnnotation {
     
-    let title: String
+    let title: String?
     let coordinate: CLLocationCoordinate2D
     let info: String
     
@@ -56,7 +56,7 @@ class MarketData: NSObject, MKAnnotation {
             }
         }
         
-        var info = mergedArray.reduce("", combine: { $0 == "" ? $1 : $0 + "\n " + $1 })
+        let info = mergedArray.reduce("", combine: { $0 == "" ? $1 : $0 + "\n " + $1 })
         
         return MarketData(title: title, coordinate: coordinate, info: info)
         

@@ -19,7 +19,7 @@ extension MapViewController: MKMapViewDelegate {
     
     // add annotation callout
     
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
         let identifier = "Places"
         
@@ -30,15 +30,15 @@ extension MapViewController: MKMapViewDelegate {
             if annotationView == nil {
                 
                 annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                annotationView.canShowCallout = true
+                annotationView!.canShowCallout = true
                 
-                let btn = UIButton.buttonWithType(.DetailDisclosure) as! UIButton
-                annotationView.rightCalloutAccessoryView = btn
+                let btn = UIButton(type: .DetailDisclosure)
+                annotationView!.rightCalloutAccessoryView = btn
                 
                 
             } else {
                 
-                annotationView.annotation = annotation
+                annotationView!.annotation = annotation
                 
             }
             return annotationView
@@ -47,7 +47,7 @@ extension MapViewController: MKMapViewDelegate {
         
     }
     
-    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
         if selectedMap == "Wochenmärkte" {
             if let item = view.annotation as? MarketData {

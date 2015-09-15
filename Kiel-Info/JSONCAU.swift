@@ -16,9 +16,9 @@ class JSONCAU: NSObject {
         
         let locations = d["locations"] as! Dictionary<String, AnyObject>
         
-        for (location, value) in locations {
+        for (_, value) in locations {
             
-            var cauData = CAUData.fromJSONObject(value as! Dictionary<String, AnyObject>)
+            let cauData = CAUData.fromJSONObject(value as! Dictionary<String, AnyObject>)
             cauArray.append(cauData!)
             
         }
