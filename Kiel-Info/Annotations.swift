@@ -8,13 +8,6 @@
 
 import MapKit
 
-/*
-enum UIAlertControllerStyle: Int {
-    case ActionSheet
-    case Alert
-}
-*/
-
 extension MapViewController: MKMapViewDelegate {
     
     // add annotation callout

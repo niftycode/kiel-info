@@ -15,8 +15,6 @@ class StartViewController: UITableViewController {
     
     lazy var jsonItem = JSONItems()
     
-    //var valueToPass: String = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 64
@@ -35,6 +33,7 @@ class StartViewController: UITableViewController {
                 self.getData(data)
         } catch let error as NSError {
             readError = error
+            print(readError)
         }
     }
 

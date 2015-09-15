@@ -56,12 +56,13 @@ class MapViewController: UIViewController {
         
         let filePath = NSBundle.mainBundle().pathForResource(location, ofType: "json")
         
-        var err: NSError?
+        var readError: NSError?
         do {
             let data = try NSData(contentsOfFile: filePath!, options: NSDataReadingOptions.DataReadingUncached)
             self.getData(data)
         } catch let error as NSError {
-            err = error
+            readError = error
+            print(readError)
         }
         
     }
