@@ -14,4 +14,8 @@ Aus dem ursprünglichen Webprojekt von [CodeforKarlsruhe](https://github.com/Cod
 
 Nutzt den Code gerne als Ausgangspunkt für interessante Orte in Eurer Stadt. Falls Ihr Fragen haben solltet, kontaktiert mich per Email oder über Twitter (@xernblog). 
 
+## Changelog
+
+* 16. September 2015 --- Version 1.1.0: Update auf *Swift 2* und *iOS9*
+
 
