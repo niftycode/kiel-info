@@ -10,6 +10,10 @@
         "Finanzamt": {
             "name": "Finanzämter",
             "description": "Finanzämter und ihre Öffnungszeiten"
+        },
+        "Verwaltung": {
+            "name": "Verwaltung",
+            "description": "Stadtverwaltung"
         }
     }
 }

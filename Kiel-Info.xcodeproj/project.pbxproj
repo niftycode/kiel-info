@@ -26,6 +26,9 @@
 		CB58D0CC1B6F5EDB00B21A6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */; };
 		CB7824FD1B6D1AC80016C6AC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */; };
 		CBAC16961B77987A005CB04F /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC16951B77987A005CB04F /* Annotations.swift */; };
+		CBB638301BE64E6C004AE930 /* verwaltung.json in Resources */ = {isa = PBXBuildFile; fileRef = CBB6382F1BE64E6C004AE930 /* verwaltung.json */; settings = {ASSET_TAGS = (); }; };
+		CBB638321BE650BA004AE930 /* JSONAdministration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB638311BE650BA004AE930 /* JSONAdministration.swift */; settings = {ASSET_TAGS = (); }; };
+		CBB638341BE650D3004AE930 /* AdministrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB638331BE650D3004AE930 /* AdministrationData.swift */; settings = {ASSET_TAGS = (); }; };
 		CBC0C03A1B6A367300AC0D2A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0C0391B6A367300AC0D2A /* StartViewController.swift */; };
 		CBC0C03E1B6A3C2900AC0D2A /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = CBC0C03D1B6A3C2900AC0D2A /* items.json */; };
 /* End PBXBuildFile section */
@@ -64,6 +67,9 @@
 		CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CBAC16951B77987A005CB04F /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
+		CBB6382F1BE64E6C004AE930 /* verwaltung.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = verwaltung.json; sourceTree = "<group>"; };
+		CBB638311BE650BA004AE930 /* JSONAdministration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONAdministration.swift; sourceTree = "<group>"; };
+		CBB638331BE650D3004AE930 /* AdministrationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdministrationData.swift; sourceTree = "<group>"; };
 		CBC0C0391B6A367300AC0D2A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		CBC0C03D1B6A3C2900AC0D2A /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +114,8 @@
 				CB52EC7B1B82279D00EA18F5 /* CAUData.swift */,
 				CB52EC7D1B822D2A00EA18F5 /* JSONFinance.swift */,
 				CB52EC7F1B822D3B00EA18F5 /* FinanceData.swift */,
+				CBB638311BE650BA004AE930 /* JSONAdministration.swift */,
+				CBB638331BE650D3004AE930 /* AdministrationData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				CB56B5551B66384D00DB7E28 /* Images.xcassets */,
 				CB56B54E1B66384D00DB7E28 /* AppDelegate.swift */,
 				CBC0C03D1B6A3C2900AC0D2A /* items.json */,
+				CBB6382F1BE64E6C004AE930 /* verwaltung.json */,
 				CB52EC811B82324D00EA18F5 /* wochenmarkt.json */,
 				CB52EC6B1B821D4600EA18F5 /* cau.json */,
 				CB52EC831B82326500EA18F5 /* finanzamt.json */,
@@ -270,6 +279,7 @@
 				CBC0C03E1B6A3C2900AC0D2A /* items.json in Resources */,
 				CB56B5561B66384D00DB7E28 /* Images.xcassets in Resources */,
 				CB52EC841B82326500EA18F5 /* finanzamt.json in Resources */,
+				CBB638301BE64E6C004AE930 /* verwaltung.json in Resources */,
 				CB52EC6C1B821D4600EA18F5 /* cau.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,8 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB7824FD1B6D1AC80016C6AC /* MapViewController.swift in Sources */,
+				CBB638341BE650D3004AE930 /* AdministrationData.swift in Sources */,
 				CB52EC761B8221F900EA18F5 /* JSONItems.swift in Sources */,
 				CB52EC7C1B82279D00EA18F5 /* CAUData.swift in Sources */,
+				CBB638321BE650BA004AE930 /* JSONAdministration.swift in Sources */,
 				CB52EC7E1B822D2A00EA18F5 /* JSONFinance.swift in Sources */,
 				CB52EC7A1B82275200EA18F5 /* JSONCAU.swift in Sources */,
 				CB56B54F1B66384D00DB7E28 /* AppDelegate.swift in Sources */,

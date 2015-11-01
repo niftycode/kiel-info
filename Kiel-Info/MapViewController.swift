@@ -16,11 +16,13 @@ class MapViewController: UIViewController {
     lazy var jsonMarkets = JSONMarkets()
     lazy var jsonCAU = JSONCAU()
     lazy var jsonFinance = JSONFinance()
+    lazy var jsonAdministration = JSONAdministration()
     
     var location: String = ""
     var markets = [MarketData]()
     var cau = [CAUData]()
     var finance = [FinanceData]()
+    var administration = [AdministrationData]()
     var selectedMap: String = ""
     
     override func viewDidLoad() {
@@ -38,6 +40,8 @@ class MapViewController: UIViewController {
             location = "cau"
         case "Finanzämter":
             location = "finanzamt"
+        case "Verwaltung":
+            location = "verwaltung"
         default:
             print("another place")
         }
@@ -78,6 +82,8 @@ class MapViewController: UIViewController {
             cau = jsonCAU.readFromJSONMapDictionary(jsonResult)
         case "Finanzämter":
             finance = jsonFinance.readFromJSONMapDictionary(jsonResult)
+        case "Verwaltung":
+            administration = jsonAdministration.readFromJSONMapDictionary(jsonResult)
         default:
             print("another place")
         }
@@ -108,6 +114,13 @@ class MapViewController: UIViewController {
             mapView.addAnnotations(finance)
             
             let region = regionForAnnotations(finance)
+            mapView.setRegion(region, animated: true)
+        case "Verwaltung":
+            mapView.removeAnnotations(administration)
+            
+            mapView.addAnnotations(administration)
+            
+            let region = regionForAnnotations(administration)
             mapView.setRegion(region, animated: true)
         default:
             print("another place")

@@ -1,0 +1,19 @@
+{"locations":
+    {
+        "Rathaus Kiel": {
+            "location": "Rathaus Kiel",
+            "info": "",
+            "coordinates": [54.32279, 10.13359]
+        },
+        "Neues Rathaus Kiel": {
+            "location": "Neues Rathaus Kiel",
+            "info": "Gebäude A, Eingang A1",
+            "coordinates": [54.31924, 10.13448]
+        },
+        "Tourist Information": {
+            "location": "Tourist Information",
+            "info": "Neues Rathaus, Gebäude B",
+            "coordinates": [54.31845, 10.13378]
+        }
+    }
+}
