@@ -42,13 +42,13 @@ class FinanceData: NSObject, MKAnnotation {
         
         var j: Int = 0
         
-        for var i = 0; i < weekday.count; i++ {
+        for i in 0 ..< weekday.count {
             var temp:String = days[j] as! String
             if !(temp as NSString).containsString("null") {
                 mergedArray.append("\(weekday[i]): \(days[j]) Uhr")
                 
             }
-            j++
+            j += 1
         }
         
         var info = mergedArray.reduce("", combine: { $0 == "" ? $1 : $0 + "\n " + $1 })
