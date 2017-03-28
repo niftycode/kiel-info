@@ -12,7 +12,7 @@ class JSONMarkets: NSObject {
     
     var marketsArray = [MarketData]()
     
-    func readFromJSONMapDictionary(d: Dictionary<String, AnyObject>) -> [MarketData] {
+    func readFromJSONMapDictionary(_ d: Dictionary<String, AnyObject>) -> [MarketData] {
         
         let locations = d["locations"] as! Dictionary<String, AnyObject>
         

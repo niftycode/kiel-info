@@ -26,9 +26,9 @@
 		CB58D0CC1B6F5EDB00B21A6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */; };
 		CB7824FD1B6D1AC80016C6AC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */; };
 		CBAC16961B77987A005CB04F /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC16951B77987A005CB04F /* Annotations.swift */; };
-		CBB638301BE64E6C004AE930 /* verwaltung.json in Resources */ = {isa = PBXBuildFile; fileRef = CBB6382F1BE64E6C004AE930 /* verwaltung.json */; settings = {ASSET_TAGS = (); }; };
-		CBB638321BE650BA004AE930 /* JSONAdministration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB638311BE650BA004AE930 /* JSONAdministration.swift */; settings = {ASSET_TAGS = (); }; };
-		CBB638341BE650D3004AE930 /* AdministrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB638331BE650D3004AE930 /* AdministrationData.swift */; settings = {ASSET_TAGS = (); }; };
+		CBB638301BE64E6C004AE930 /* verwaltung.json in Resources */ = {isa = PBXBuildFile; fileRef = CBB6382F1BE64E6C004AE930 /* verwaltung.json */; };
+		CBB638321BE650BA004AE930 /* JSONAdministration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB638311BE650BA004AE930 /* JSONAdministration.swift */; };
+		CBB638341BE650D3004AE930 /* AdministrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB638331BE650D3004AE930 /* AdministrationData.swift */; };
 		CBC0C03A1B6A367300AC0D2A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC0C0391B6A367300AC0D2A /* StartViewController.swift */; };
 		CBC0C03E1B6A3C2900AC0D2A /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = CBC0C03D1B6A3C2900AC0D2A /* items.json */; };
 /* End PBXBuildFile section */
@@ -237,14 +237,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Bodo Schönfeld";
 				TargetAttributes = {
 					CB56B5481B66384D00DB7E28 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 					};
 					CB56B55D1B66384D00DB7E28 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 						TestTargetID = CB56B5481B66384D00DB7E28;
 					};
 				};
@@ -366,8 +368,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -411,8 +415,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -431,6 +437,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -445,6 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.niftycode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -458,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.niftycode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -477,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.nicefield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
 			};
 			name = Debug;
@@ -493,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.nicefield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
 			};
 			name = Release;

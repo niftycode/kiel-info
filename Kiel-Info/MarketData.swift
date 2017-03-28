@@ -23,7 +23,7 @@ class MarketData: NSObject, MKAnnotation {
         super.init()
     }
     
-    class func fromJSONObject (d: Dictionary<String, AnyObject>) -> MarketData? {
+    class func fromJSONObject (_ d: Dictionary<String, AnyObject>) -> MarketData? {
         
         let weekday = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
         
@@ -41,7 +41,7 @@ class MarketData: NSObject, MKAnnotation {
         
         for i in 0 ..< weekday.count {
             var temp:String = days[j] as! String
-            if !(temp as NSString).containsString("null") {
+            if !(temp as NSString).contains("null") {
                 mergedArray.append("\(weekday[i]): \(days[j]) Uhr")
                 
             }
@@ -56,7 +56,7 @@ class MarketData: NSObject, MKAnnotation {
             }
         }
         
-        let info = mergedArray.reduce("", combine: { $0 == "" ? $1 : $0 + "\n " + $1 })
+        let info = mergedArray.reduce("", { $0 == "" ? $1 : $0 + "\n " + $1 })
         
         return MarketData(title: title, coordinate: coordinate, info: info)
         

@@ -23,7 +23,7 @@ class CAUData: NSObject, MKAnnotation {
         super.init()
     }
     
-    class func fromJSONObject (d: Dictionary<String, AnyObject>) -> CAUData? {
+    class func fromJSONObject (_ d: Dictionary<String, AnyObject>) -> CAUData? {
         
         let place = d["location"] as! String
         let additionalInfo = d["info"] as! String

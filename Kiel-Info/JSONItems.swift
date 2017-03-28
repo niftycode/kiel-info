@@ -13,7 +13,7 @@ class JSONItems: NSObject {
     var jsonArray = [ItemData]()
     
     // places names
-    func readFromJSONDictionary(d: Dictionary<String, AnyObject>) {
+    func readFromJSONDictionary(_ d: Dictionary<String, AnyObject>) {
         
         let locations = d["location"] as! Dictionary<String, AnyObject>
         

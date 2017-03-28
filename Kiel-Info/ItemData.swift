@@ -13,7 +13,7 @@ class ItemData: NSObject {
     var name: String = ""
     var about: String = ""
     
-    func showJSONItems(d: Dictionary<String, AnyObject>) {
+    func showJSONItems(_ d: Dictionary<String, AnyObject>) {
         
         name = d["name"] as! String
         about = d["description"] as! String

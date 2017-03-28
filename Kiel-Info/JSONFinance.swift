@@ -12,7 +12,7 @@ class JSONFinance: NSObject {
     
     var financeArray = [FinanceData]()
     
-    func readFromJSONMapDictionary(d: Dictionary<String, AnyObject>) -> [FinanceData] {
+    func readFromJSONMapDictionary(_ d: Dictionary<String, AnyObject>) -> [FinanceData] {
         
         let locations = d["locations"] as! Dictionary<String, AnyObject>
         

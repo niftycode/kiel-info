@@ -23,7 +23,7 @@ class AdministrationData: NSObject, MKAnnotation {
         super.init()
     }
     
-    class func fromJSONObject (d: Dictionary<String, AnyObject>) -> AdministrationData? {
+    class func fromJSONObject (_ d: Dictionary<String, AnyObject>) -> AdministrationData? {
         
         let place = d["location"] as! String
         let additionalInfo = d["info"] as! String

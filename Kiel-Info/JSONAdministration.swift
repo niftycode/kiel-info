@@ -12,7 +12,7 @@ class JSONAdministration: NSObject {
     
     var administrationArray = [AdministrationData]()
     
-    func readFromJSONMapDictionary(d: Dictionary<String, AnyObject>) -> [AdministrationData] {
+    func readFromJSONMapDictionary(_ d: Dictionary<String, AnyObject>) -> [AdministrationData] {
         
         let locations = d["locations"] as! Dictionary<String, AnyObject>
         

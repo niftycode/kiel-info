@@ -24,12 +24,12 @@ class StartViewController: UITableViewController {
     
     func setup() {
         
-        let filePath = NSBundle.mainBundle().pathForResource("items",ofType:"json")
+        let filePath = Bundle.main.path(forResource: "items",ofType:"json")
         
         var readError:NSError?
         do {
-            let data = try NSData(contentsOfFile:filePath!,
-                options: NSDataReadingOptions.DataReadingUncached)
+            let data = try Data(contentsOf: URL(fileURLWithPath: filePath!),
+                options: NSData.ReadingOptions.uncached)
                 self.getData(data)
         } catch let error as NSError {
             readError = error
@@ -37,23 +37,23 @@ class StartViewController: UITableViewController {
         }
     }
 
-    func getData(data: NSData) {
+    func getData(_ data: Data) {
         
-        let jsonResult: AnyObject = (try! NSJSONSerialization.JSONObjectWithData(data,
-            options: NSJSONReadingOptions.MutableContainers)) as! Dictionary<String, AnyObject>
+        let jsonResult: AnyObject = (try! JSONSerialization.jsonObject(with: data,
+            options: JSONSerialization.ReadingOptions.mutableContainers)) as! Dictionary<String, AnyObject> as AnyObject
         
         jsonItem.readFromJSONDictionary(jsonResult as! Dictionary<String, AnyObject>)
         
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return jsonItem.jsonArray.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("LocationItem", forIndexPath: indexPath) 
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LocationItem", for: indexPath) 
         
         let item = jsonItem.jsonArray[indexPath.row]
         
@@ -62,7 +62,7 @@ class StartViewController: UITableViewController {
         return cell
     }
     
-    func configureTextForCell(cell: UITableViewCell, withItemData item: ItemData) {
+    func configureTextForCell(_ cell: UITableViewCell, withItemData item: ItemData) {
         
         let nameLabel = cell.viewWithTag(1001) as! UILabel
         nameLabel.text = item.name
@@ -70,7 +70,7 @@ class StartViewController: UITableViewController {
         aboutLabel.text = item.about
     }
 
-    func getNameLabel(cell: UITableViewCell) -> String {
+    func getNameLabel(_ cell: UITableViewCell) -> String {
         
         let nameLabel = cell.viewWithTag(1001) as! UILabel
         let name = nameLabel.text
@@ -80,15 +80,15 @@ class StartViewController: UITableViewController {
     
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ShowMap" {
             
             let selectedIndexPath = tableView.indexPathForSelectedRow
-            let cell = tableView.cellForRowAtIndexPath(selectedIndexPath!)
+            let cell = tableView.cellForRow(at: selectedIndexPath!)
             let name = getNameLabel(cell!)
             
-            if let navigationController = segue.destinationViewController as? UINavigationController {
+            if let navigationController = segue.destination as? UINavigationController {
                 if let destination = navigationController.topViewController as? MapViewController {
                         destination.selectedMap = name
             

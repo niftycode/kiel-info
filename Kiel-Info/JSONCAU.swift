@@ -12,7 +12,7 @@ class JSONCAU: NSObject {
     
     var cauArray = [CAUData]()
     
-    func readFromJSONMapDictionary(d: Dictionary<String, AnyObject>) -> [CAUData] {
+    func readFromJSONMapDictionary(_ d: Dictionary<String, AnyObject>) -> [CAUData] {
         
         let locations = d["locations"] as! Dictionary<String, AnyObject>
         

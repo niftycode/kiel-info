@@ -25,7 +25,7 @@ class FinanceData: NSObject, MKAnnotation {
         super.init()
     }
     
-    class func fromJSONObject (d: Dictionary<String, AnyObject>) -> FinanceData? {
+    class func fromJSONObject (_ d: Dictionary<String, AnyObject>) -> FinanceData? {
         
         let weekday = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
         
@@ -44,14 +44,14 @@ class FinanceData: NSObject, MKAnnotation {
         
         for i in 0 ..< weekday.count {
             var temp:String = days[j] as! String
-            if !(temp as NSString).containsString("null") {
+            if !(temp as NSString).contains("null") {
                 mergedArray.append("\(weekday[i]): \(days[j]) Uhr")
                 
             }
             j += 1
         }
         
-        var info = mergedArray.reduce("", combine: { $0 == "" ? $1 : $0 + "\n " + $1 })
+        var info = mergedArray.reduce("", { $0 == "" ? $1 : $0 + "\n " + $1 })
         
         var title: String! {
             if place.isEmpty {

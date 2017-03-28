@@ -30,7 +30,7 @@ class MapViewController: UIViewController {
         mapView.delegate = self
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         switch selectedMap {
@@ -49,7 +49,7 @@ class MapViewController: UIViewController {
         self.fetchDataFromJSONFile()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         updatePlaces()
     }
@@ -58,11 +58,11 @@ class MapViewController: UIViewController {
     
     func fetchDataFromJSONFile() {
         
-        let filePath = NSBundle.mainBundle().pathForResource(location, ofType: "json")
+        let filePath = Bundle.main.path(forResource: location, ofType: "json")
         
         var readError: NSError?
         do {
-            let data = try NSData(contentsOfFile: filePath!, options: NSDataReadingOptions.DataReadingUncached)
+            let data = try Data(contentsOf: URL(fileURLWithPath: filePath!), options: NSData.ReadingOptions.uncached)
             self.getData(data)
         } catch let error as NSError {
             readError = error
@@ -70,10 +70,10 @@ class MapViewController: UIViewController {
         }
     }
     
-    func getData(data: NSData) {
+    func getData(_ data: Data) {
         
-        let jsonResult = (try! NSJSONSerialization.JSONObjectWithData(data,
-            options: NSJSONReadingOptions.MutableContainers)) as! Dictionary<String, AnyObject>
+        let jsonResult = (try! JSONSerialization.jsonObject(with: data,
+            options: JSONSerialization.ReadingOptions.mutableContainers)) as! Dictionary<String, AnyObject>
         
         switch selectedMap {
         case "Wochenmärkte":
@@ -127,7 +127,7 @@ class MapViewController: UIViewController {
         }
     }
     
-    func regionForAnnotations(annotations: [MKAnnotation]) -> MKCoordinateRegion {
+    func regionForAnnotations(_ annotations: [MKAnnotation]) -> MKCoordinateRegion {
         
         var region: MKCoordinateRegion
         
@@ -161,8 +161,8 @@ class MapViewController: UIViewController {
     
     // MARK: - actions
     
-    @IBAction func done(sender: UIBarButtonItem) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func done(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
