@@ -66,7 +66,7 @@ class MapViewController: UIViewController {
             self.getData(data)
         } catch let error as NSError {
             readError = error
-            print(readError)
+            print(readError as Any)
         }
     }
     

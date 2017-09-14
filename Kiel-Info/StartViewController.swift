@@ -33,7 +33,7 @@ class StartViewController: UITableViewController {
                 self.getData(data)
         } catch let error as NSError {
             readError = error
-            print(readError)
+            print(readError ?? "Error")
         }
     }
 

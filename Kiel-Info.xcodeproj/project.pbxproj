@@ -22,7 +22,6 @@
 		CB56B5541B66384D00DB7E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB56B5521B66384D00DB7E28 /* Main.storyboard */; };
 		CB56B5561B66384D00DB7E28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB56B5551B66384D00DB7E28 /* Images.xcassets */; };
 		CB56B5591B66384D00DB7E28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB56B5571B66384D00DB7E28 /* LaunchScreen.xib */; };
-		CB56B5651B66384D00DB7E28 /* Kiel_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56B5641B66384D00DB7E28 /* Kiel_InfoTests.swift */; };
 		CB58D0CC1B6F5EDB00B21A6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */; };
 		CB7824FD1B6D1AC80016C6AC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */; };
 		CBAC16961B77987A005CB04F /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAC16951B77987A005CB04F /* Annotations.swift */; };
@@ -62,8 +61,6 @@
 		CB56B5551B66384D00DB7E28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB56B5581B66384D00DB7E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CB56B55E1B66384D00DB7E28 /* Kiel-InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kiel-InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB56B5631B66384D00DB7E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB56B5641B66384D00DB7E28 /* Kiel_InfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kiel_InfoTests.swift; sourceTree = "<group>"; };
 		CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CBAC16951B77987A005CB04F /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
@@ -125,7 +122,6 @@
 			children = (
 				CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */,
 				CB56B54B1B66384D00DB7E28 /* Kiel-Info */,
-				CB56B5611B66384D00DB7E28 /* Kiel-InfoTests */,
 				CB56B54A1B66384D00DB7E28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -161,23 +157,6 @@
 				CB52EC6B1B821D4600EA18F5 /* cau.json */,
 				CB52EC831B82326500EA18F5 /* finanzamt.json */,
 				CB56B54D1B66384D00DB7E28 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CB56B5611B66384D00DB7E28 /* Kiel-InfoTests */ = {
-			isa = PBXGroup;
-			children = (
-				CB56B5641B66384D00DB7E28 /* Kiel_InfoTests.swift */,
-				CB56B5621B66384D00DB7E28 /* Supporting Files */,
-			);
-			path = "Kiel-InfoTests";
-			sourceTree = "<group>";
-		};
-		CB56B5621B66384D00DB7E28 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CB56B5631B66384D00DB7E28 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -237,16 +216,17 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Bodo Schönfeld";
 				TargetAttributes = {
 					CB56B5481B66384D00DB7E28 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
 					};
 					CB56B55D1B66384D00DB7E28 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 						TestTargetID = CB56B5481B66384D00DB7E28;
 					};
 				};
@@ -321,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB56B5651B66384D00DB7E28 /* Kiel_InfoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,14 +342,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -410,14 +395,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -447,12 +438,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Kiel-Info/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.niftycode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -461,12 +456,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Kiel-Info/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.niftycode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -486,7 +485,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.nicefield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
 			};
 			name = Debug;
@@ -503,7 +503,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.nicefield.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
 			};
 			name = Release;
