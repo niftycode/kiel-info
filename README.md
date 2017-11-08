@@ -1,6 +1,6 @@
 # kiel-info
 
-Diese App zeigt verschiedene Orte -- teilweise mit Zusatzinformationen -- in Kiel an. Dazu gehören aktuell:
+Diese App zeigt verschiedene Orte - teilweise mit Zusatzinformationen - in Kiel an. Dazu gehören aktuell:
 
 * Wochenmärkte in Kiel (mit Öffnungszeiten)
 * Eine Übersicht über den Campus der Christian-Albrechts-Universität (CAU)
@@ -16,9 +16,9 @@ Nutzt den Code gerne als Ausgangspunkt für interessante Orte in Eurer Stadt. Fa
 
 ## Changelog
 
-* 16. September 2015 - Version 1.1.0: Update auf *Swift 2* und *iOS9*
-* 1. November 2015 - Die App wurde um eine neue Kategorie "Verwaltung" mit drei Einträgen ergänzt.
-* 9. April 2016 - Der Code wurde auf Swift 2.2 aktualisiert.
-* 14. September 2017 - Version 1.2: Update auf Swift 4 und iOS 11
+* 16.09.2015 - Version 1.1.0: Update auf *Swift 2* und *iOS9*
+* 1.11.2015 - Die App wurde um eine neue Kategorie "Verwaltung" mit drei Einträgen ergänzt.
+* 9.04.2016 - Der Code wurde auf Swift 2.2 aktualisiert.
+* 14.09.2017 - Version 1.2: Update auf *Swift 4* und *iOS 11*
 
 
