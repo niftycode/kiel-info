@@ -32,16 +32,6 @@
 		CBC0C03E1B6A3C2900AC0D2A /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = CBC0C03D1B6A3C2900AC0D2A /* items.json */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CB56B55F1B66384D00DB7E28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB56B5411B66384D00DB7E28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB56B5481B66384D00DB7E28;
-			remoteInfo = "Kiel-Info";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		CB52EC6B1B821D4600EA18F5 /* cau.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cau.json; sourceTree = "<group>"; };
 		CB52EC6D1B821E7700EA18F5 /* MarketData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketData.swift; sourceTree = "<group>"; };
@@ -60,7 +50,6 @@
 		CB56B5531B66384D00DB7E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB56B5551B66384D00DB7E28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB56B5581B66384D00DB7E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CB56B55E1B66384D00DB7E28 /* Kiel-InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kiel-InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB58D0CB1B6F5EDB00B21A6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CB7824FC1B6D1AC80016C6AC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CBAC16951B77987A005CB04F /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
@@ -77,13 +66,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB58D0CC1B6F5EDB00B21A6F /* MapKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB56B55B1B66384D00DB7E28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				CB56B5491B66384D00DB7E28 /* Kiel-Info.app */,
-				CB56B55E1B66384D00DB7E28 /* Kiel-InfoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,24 +171,6 @@
 			productReference = CB56B5491B66384D00DB7E28 /* Kiel-Info.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB56B55D1B66384D00DB7E28 /* Kiel-InfoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB56B56B1B66384D00DB7E28 /* Build configuration list for PBXNativeTarget "Kiel-InfoTests" */;
-			buildPhases = (
-				CB56B55A1B66384D00DB7E28 /* Sources */,
-				CB56B55B1B66384D00DB7E28 /* Frameworks */,
-				CB56B55C1B66384D00DB7E28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB56B5601B66384D00DB7E28 /* PBXTargetDependency */,
-			);
-			name = "Kiel-InfoTests";
-			productName = "Kiel-InfoTests";
-			productReference = CB56B55E1B66384D00DB7E28 /* Kiel-InfoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,24 +179,19 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Bodo Schönfeld";
 				TargetAttributes = {
 					CB56B5481B66384D00DB7E28 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Manual;
-					};
-					CB56B55D1B66384D00DB7E28 = {
-						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0900;
-						TestTargetID = CB56B5481B66384D00DB7E28;
 					};
 				};
 			};
 			buildConfigurationList = CB56B5441B66384D00DB7E28 /* Build configuration list for PBXProject "Kiel-Info" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -245,7 +203,6 @@
 			projectRoot = "";
 			targets = (
 				CB56B5481B66384D00DB7E28 /* Kiel-Info */,
-				CB56B55D1B66384D00DB7E28 /* Kiel-InfoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,13 +220,6 @@
 				CB52EC841B82326500EA18F5 /* finanzamt.json in Resources */,
 				CBB638301BE64E6C004AE930 /* verwaltung.json in Resources */,
 				CB52EC6C1B821D4600EA18F5 /* cau.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB56B55C1B66384D00DB7E28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,22 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB56B55A1B66384D00DB7E28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB56B5601B66384D00DB7E28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB56B5481B66384D00DB7E28 /* Kiel-Info */;
-			targetProxy = CB56B55F1B66384D00DB7E28 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CB56B5521B66384D00DB7E28 /* Main.storyboard */ = {
@@ -346,12 +281,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -379,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -399,12 +336,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -425,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -446,8 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.niftycode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -464,48 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.niftycode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		CB56B56C1B66384D00DB7E28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Kiel-InfoTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.nicefield.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
-			};
-			name = Debug;
-		};
-		CB56B56D1B66384D00DB7E28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Kiel-InfoTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.nicefield.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiel-Info.app/Kiel-Info";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -526,15 +423,6 @@
 			buildConfigurations = (
 				CB56B5691B66384D00DB7E28 /* Debug */,
 				CB56B56A1B66384D00DB7E28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB56B56B1B66384D00DB7E28 /* Build configuration list for PBXNativeTarget "Kiel-InfoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB56B56C1B66384D00DB7E28 /* Debug */,
-				CB56B56D1B66384D00DB7E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
