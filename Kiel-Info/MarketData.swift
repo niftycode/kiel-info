@@ -40,7 +40,7 @@ class MarketData: NSObject, MKAnnotation {
         var j: Int = 0
         
         for i in 0 ..< weekday.count {
-            var temp:String = days[j] as! String
+            let temp:String = days[j] as! String
             if !(temp as NSString).contains("null") {
                 mergedArray.append("\(weekday[i]): \(days[j]) Uhr")
                 
@@ -60,12 +60,5 @@ class MarketData: NSObject, MKAnnotation {
         
         return MarketData(title: title, coordinate: coordinate, info: info)
         
-    }
-    
-    /*
-    var subtitle: String {
-        return ""
-    }
-    */
-    
+    }    
 }

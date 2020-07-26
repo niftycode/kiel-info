@@ -21,5 +21,6 @@ Nutzt den Code gerne als Ausgangspunkt für interessante Orte in Eurer Stadt. Fa
 * 9.04.2016 - Der Code wurde auf Swift 2.2 aktualisiert.
 * 14.09.2017 - Version 1.2: Update auf *Swift 4* und *iOS 11*
 * 25.07.2019 - Migrate to Swift 5
+* 26.07.2020 - Compiler-Warnungen beseitigt.
 
 

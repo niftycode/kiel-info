@@ -43,7 +43,7 @@ class FinanceData: NSObject, MKAnnotation {
         var j: Int = 0
         
         for i in 0 ..< weekday.count {
-            var temp:String = days[j] as! String
+            let temp:String = days[j] as! String
             if !(temp as NSString).contains("null") {
                 mergedArray.append("\(weekday[i]): \(days[j]) Uhr")
                 
@@ -51,7 +51,7 @@ class FinanceData: NSObject, MKAnnotation {
             j += 1
         }
         
-        var info = mergedArray.reduce("", { $0 == "" ? $1 : $0 + "\n " + $1 })
+        let info = mergedArray.reduce("", { $0 == "" ? $1 : $0 + "\n " + $1 })
         
         var title: String! {
             if place.isEmpty {
